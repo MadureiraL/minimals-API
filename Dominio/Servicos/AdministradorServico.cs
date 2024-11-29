@@ -13,11 +13,16 @@ namespace Minimals_API.Dominio.Servicos
     public class AdministradorServico : IAdministrador
     {
         private readonly DbContexto _contexto;
-        
+
 
         public AdministradorServico(DbContexto contexto)
         {
             _contexto = contexto;
+        }
+
+        public Administrador? BuscaPorId(int id)
+        {
+            return _contexto.Administradores.Where(v => v.Id == id).FirstOrDefault();
         }
 
         public Administrador Incluir(Administrador adminstrador)
@@ -37,7 +42,7 @@ namespace Minimals_API.Dominio.Servicos
         public List<Administrador> Todos(int? pagina)
         {
             var query = _contexto.Administradores.AsQueryable();
-           
+
             int intensPorPagina = 10;
 
             if (pagina != null)

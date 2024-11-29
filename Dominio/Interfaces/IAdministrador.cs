@@ -13,6 +13,8 @@ namespace Minimals_API.Dominio.Interfaces
 
         Administrador Incluir(Administrador adminstrador);
 
-         List<Administrador> Todos(int? pagina);
+        Administrador? BuscaPorId(int id);
+        List<Administrador> Todos(int? pagina);
+
     }
 }

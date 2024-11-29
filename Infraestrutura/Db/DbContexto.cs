@@ -19,6 +19,7 @@ namespace Minimals_API.Infraestrutura.Db
         public DbSet<Veiculo> Veiculos { get; set; } = default!;
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //Adm com maior permissão e login
             modelBuilder.Entity<Administrador>().HasData(
                 new Administrador
                 {
