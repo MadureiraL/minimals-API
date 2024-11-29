@@ -22,7 +22,7 @@ O gerenciamento de alguns protocolos só pode ser feito pelos administradores co
 
 Retorna a página inicial.
 
--   **URL:** /
+ **URL:** /
     
 -   **Método:** GET
     
