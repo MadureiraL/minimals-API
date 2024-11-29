@@ -6,7 +6,7 @@ Esta API fornece endpoints para gerenciar administradores, veículos e a página
 ## Informações Gerais
 O gerenciamento de alguns protocolos só pode ser feito pelos administradores com a role **Adm**. Abaixo estão as informações do administrador geral que gerencia toda a aplicação:
 
-```json
+json
 {
   "Id": ,
   "Email": "administrador@teste.com",
@@ -22,7 +22,7 @@ O gerenciamento de alguns protocolos só pode ser feito pelos administradores co
 
 Retorna a página inicial.
 
- **URL:** /
+- **URL:** /
     
 -   **Método:** GET
     
