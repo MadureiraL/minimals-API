@@ -8,10 +8,8 @@ O gerenciamento de alguns protocolos só pode ser feito pelos administradores co
 
 json
 {
-  "Id": ,
   "Email": "administrador@teste.com",
-  "Senha": "123456",
-  "Perfil": "Adm"
+  "Senha": "123456", 
 }
 
 ## Endpoints
